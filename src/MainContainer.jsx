@@ -1,4 +1,5 @@
 import BrandLogos from './BrandLogos'
+import LittleIcon from './LittleIcon'
 import MainTextContent from './MainTextContent'
 
 function MainContainer() {
@@ -40,6 +41,17 @@ function MainContainer() {
                     <BrandLogos link={'https://hermes.dio.me/companies/449dbdbc-542e-4205-802d-3bab397d1c1c.png'}> </BrandLogos>
                     <BrandLogos link={'https://hermes.dio.me/companies/cf7896e2-36d9-4a2a-bc7b-82c99eb329a0.png'}> </BrandLogos>
                     <BrandLogos link={'https://hermes.dio.me/companies/b75131f7-af8a-4657-88c4-232566d1afeb.png'}> </BrandLogos>
+                </div>
+
+                <div className='flex flex-col w-40 h-[200px] bg-orange-500'>
+                    <div className='flex justify-center bg-blue-900'>
+                        <LittleIcon thisClass={""}></LittleIcon>
+                        <LittleIcon thisClass={"-ml-2"}></LittleIcon>
+                        <LittleIcon thisClass={"-ml-2"}></LittleIcon>
+                        <LittleIcon thisClass={"-ml-2"}></LittleIcon>
+                        <LittleIcon thisClass={"-ml-2"}></LittleIcon>
+                    </div>
+
                 </div>
 
             </div>    
