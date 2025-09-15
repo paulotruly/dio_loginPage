@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.grid-logos > :nth-child(3n+1) { /* coluna 1 */
+  justify-self: start;
+}
+
+.grid-logos > :nth-child(3n+2) { /* coluna 2 */
+  justify-self: center;
+}
+
+.grid-logos > :nth-child(3n+3) { /* coluna 2 */
+  justify-self: center;
+}
+
+.grid-logos > :nth-child(4n) { /* coluna 3 */
+  justify-self: end;
+}
