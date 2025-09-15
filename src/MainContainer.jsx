@@ -43,7 +43,7 @@ function MainContainer() {
                     <BrandLogos link={'https://hermes.dio.me/companies/b75131f7-af8a-4657-88c4-232566d1afeb.png'}> </BrandLogos>
                 </div>
 
-                <div className='flex flex-col w-40 h-[200px] bg-orange-500'>
+                <div className='flex flex-col w-40 h-[200px] mt-10 h-full bg-orange-500'>
                     <div className='flex justify-center bg-blue-900'>
                         <LittleIcon thisClass={""}></LittleIcon>
                         <LittleIcon thisClass={"-ml-2"}></LittleIcon>
