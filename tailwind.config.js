@@ -5,7 +5,9 @@ export default {
     extend: {
       colors: {
         'header-background': '#151515',
-        'dio-purple': '#7F28B5'
+        'dio-purple': '#7F28B5',
+        'yellow-star': '#FFD600',
+        'main-background': '#1E192C',
       }
     },
   },

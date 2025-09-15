@@ -1,3 +1,4 @@
+import StarIcon from './assets/StarIcon'
 import BrandLogos from './BrandLogos'
 import LittleIcon from './LittleIcon'
 import MainTextContent from './MainTextContent'
@@ -5,16 +6,16 @@ import MainTextContent from './MainTextContent'
 function MainContainer() {
 
   return (
-    <div className="flex h-screen bg-red-400">
+    <div className="flex bg-red-40">
         
-        <div className="flex justify-center w-3/5 py-7 px-20 bg-blue-400">
-            <div className="flex flex-col bg-yellow-200">
+        <div className="flex justify-center w-3/5 py-7 px-20 bg-main-background">
+            <div className="flex flex-col p-2 gap-6">
 
-                <div className="mr-auto bg-blue-700 leading-none">
+                <div className="mr-auto leading-none">
                     <h2 className="font-extrabold text-white text-[35px]"> Domine as tecnologias utilizadas pelas empresas mais inovadoras </h2>
                 </div>
 
-                <div className='flex flex-col mt-6'>
+                <div className='flex flex-col'>
                     <MainTextContent
                     textContent='+1.750 cursos, bootcamps, projetos e formações nas carreiras de back-end, front-end, mobile, games, data, inteligência artificial & cloud;'>    
                     </MainTextContent>
@@ -26,7 +27,7 @@ function MainContainer() {
                     </MainTextContent>
                 </div>
 
-                <div className='grid grid-cols-4 grid-logos w-2/3 gap-5 mt-6'>
+                <div className='grid grid-cols-4 grid-logos w-2/3 gap-5 ml-7'>
                     <BrandLogos link={'https://hermes.dio.me/companies/85e2dba0-4153-4a62-8dc5-69da53a547c1.png'}> </BrandLogos>
                     <BrandLogos link={'https://hermes.dio.me/companies/46a193aa-2c75-40a3-bf53-988fd1598190.png'}> </BrandLogos>
                     <BrandLogos link={'https://hermes.dio.me/files/assets/86bd44aa-892b-4fea-a893-13b8018606ce.png'}> </BrandLogos>
@@ -43,21 +44,35 @@ function MainContainer() {
                     <BrandLogos link={'https://hermes.dio.me/companies/b75131f7-af8a-4657-88c4-232566d1afeb.png'}> </BrandLogos>
                 </div>
 
-                <div className='flex flex-col w-40 h-[200px] mt-10 h-full bg-orange-500'>
-                    <div className='flex justify-center bg-blue-900'>
-                        <LittleIcon thisClass={""}></LittleIcon>
-                        <LittleIcon thisClass={"-ml-2"}></LittleIcon>
-                        <LittleIcon thisClass={"-ml-2"}></LittleIcon>
-                        <LittleIcon thisClass={"-ml-2"}></LittleIcon>
-                        <LittleIcon thisClass={"-ml-2"}></LittleIcon>
+
+                <div className='flex flex-row mt-5'>
+                    <div className='flex flex-col w-40'>
+                        <div className='flex justify-center'>
+                            <LittleIcon thisClass={""}></LittleIcon>
+                            <LittleIcon thisClass={"-ml-2"}></LittleIcon>
+                            <LittleIcon thisClass={"-ml-2"}></LittleIcon>
+                            <LittleIcon thisClass={"-ml-2"}></LittleIcon>
+                            <LittleIcon thisClass={"-ml-2"}></LittleIcon>
+                        </div>
+                        <div className='flex flex-row gap-2 items-center justify-center w-auto pt-1 px-2 text-[14px]'>
+                            <p className='text-white font-bold'>4.5+</p>
+                            <StarIcon className='w-[18px] h-auto'> </StarIcon>
+                            <StarIcon className='w-[18px] h-auto'> </StarIcon>
+                            <StarIcon className='w-[18px] h-auto'> </StarIcon>
+                            <StarIcon className='w-[18px] h-auto'> </StarIcon>
+                            <StarIcon fillType='half-fill' className='w-[18px] h-auto'> </StarIcon>
+                        </div>     
                     </div>
 
+                    <div className='flex text-white font-normal ml-3 w-2/3 items-center'>
+                        <p> <span className='font-bold'> Mais de 1.500.000 de talentos </span> confiam na DIO e estão se preparando para o futuro com nossos cursos </p>
+                    </div>
                 </div>
 
             </div>    
         </div>
 
-        <div className="w-2/5 bg-pink-400">
+        <div className="w-2/5 bg-main-background">
         </div>
 
     </div>
