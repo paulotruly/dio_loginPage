@@ -8,6 +8,7 @@ export default {
         'dio-purple': '#7F28B5',
         'yellow-star': '#FFD600',
         'main-background': '#1E192C',
+        'disabled-purple': '#BF93DA',
       }
     },
   },

@@ -2,6 +2,8 @@ import StarIcon from './assets/StarIcon'
 import BrandLogos from './BrandLogos'
 import LittleIcon from './LittleIcon'
 import MainTextContent from './MainTextContent'
+import EmailIcon from './assets/EmailIcon'
+import PurpleButton from './PurpleButton'
 
 function MainContainer() {
 
@@ -72,7 +74,39 @@ function MainContainer() {
             </div>    
         </div>
 
-        <div className="w-2/5 bg-main-background">
+        <div className="flex justify-center pt-6 w-2/5 bg-red-600">
+            <div className="rounded-[15px] bg-white w-2/3 h-1/2 p-5">
+                
+                <div className='flex flex-col items-center'>
+                    <h3 className='text-[25px] font-bold text-dio-purple'> Já tem cadastro? </h3>
+                    <p className='text-[17px]'> Faça seu login </p>
+                </div>
+
+                <form className="flex flex-col mt-5 mx-5" action="">
+                    <div>
+                        <div className='flex flex-row border-b pb-1 mb-4 border-dio-purple'>
+                            <label className='flex mr-3 items-center' htmlFor="email">
+                                <EmailIcon fillClass="fill-dio-purple"> </EmailIcon>
+                            </label>
+                            <input className='text-lg placeholder-gray-500 font-normal appearance-none border-none outline-none focus:outline-none focus:ring-0' id='email' type="email" placeholder="Endereço de e-mail"/>
+                        </div>
+
+                        <div className='flex flex-row border-b pb-1 mb-4 border-dio-purple'>
+                            <label className='flex mr-3 items-center' htmlFor="email">
+                                <EmailIcon fillClass="fill-dio-purple"> </EmailIcon>
+                            </label>
+                            <input className='text-lg placeholder-gray-500 font-normal appearance-none border-none outline-none focus:outline-none focus:ring-0' id='email' type="email" placeholder="*Senha"/>
+                        </div>
+                    </div>
+
+                    <div className='mt-2'>
+                        <PurpleButton disabled name='ENTRAR'> </PurpleButton>
+                    </div>
+                </form>
+
+
+                
+            </div>
         </div>
 
     </div>

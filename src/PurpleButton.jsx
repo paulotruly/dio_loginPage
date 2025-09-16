@@ -1,9 +1,10 @@
-function PurpleButton({name="Sem título", click="#"}) {
+function PurpleButton({name="Sem título", click="#", disabled}) {
 
   return (
     <div>
-       <button 
-       className="h-auto w-auto text-white font-bold bg-dio-purple rounded-[10px] py-1 px-4 mx-2"
+       <button
+       disabled={disabled}
+       className="disabled:bg-disabled-purple h-auto w-full text-white font-bold bg-dio-purple rounded-[10px] py-2 px-4"
        onClick={click}
        >
          {name}
